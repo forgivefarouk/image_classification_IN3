@@ -6,7 +6,6 @@ Welcome to the Image Classification project utilizing Convolutional Neural Netwo
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [Key Components](#key-components)
 - [Getting Started](#getting-started)
 - [CNN Architecture](#2-cnn-architecture-design)
