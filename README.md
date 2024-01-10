@@ -30,11 +30,12 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ### 2. CNN Architecture Design
 
+- I selected this model architecture based on its simplicity and efficiency for image classification tasks. The combination of Conv2D layers allows the model to learn hierarchical features from the input images, while the MaxPooling2D layers help reduce spatial dimensions and computational complexity. The design strikes a balance between complexity and performance, making it suitable for the task at hand.
+
 ![CNN Architecture](reports/figures/model.png)
 
 - Initially, a basic model was constructed with three Conv2D layers and one Dense layer. However, it was observed that the model was underfitting.
 - To address the underfitting issue, a more complex architecture was developed, consisting of three blocks. Each block comprises a sequence of Conv2D, Conv2D, and MaxPooling2D layers.
-
 
 ### 3. Training and Validation
 
