@@ -34,7 +34,7 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ### 2. CNN Architecture Design
 
-![CNN Architecture]("reports/figures/model.png")
+![CNN Architecture](reports/figures/model.png)
 
 ### 3. Training and Validation
 
@@ -56,8 +56,10 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ## Baseline Model + BatchNormalization + Dropout
 
-- So let's regularize the model. In deep learning, dropout is a very good form of regularization.
 ![Baseline Model + BatchNormalization + Dropout](reports/figures/03-schedule_dropout.JPG)
+
+- So let's regularize the model. In deep learning, dropout is a very good form of regularization.
+
 
 ## Baseline Model + BatchNormalization + Dropout + Data Augmentation
 
