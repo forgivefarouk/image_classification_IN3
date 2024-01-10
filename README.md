@@ -11,7 +11,7 @@ Welcome to the Image Classification project utilizing Convolutional Neural Netwo
 - [Getting Started](#getting-started)
 - [CNN Architecture](#2-cnn-architecture-design)
 - [Challenges](#challenges)
-- [model's performance]()
+- [model's performance](#5-models-performance)
 ## Key Components
 
 ### 1. Dataset Selection and Preprocessing
