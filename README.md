@@ -34,6 +34,8 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ### 2. CNN Architecture Design
 
+<img src="reports\figures\model.png" alt="Alt text" title="Optional title">
+
 ![CNN Architecture]("reports\figures\model.png")
 
 ### 3. Training and Validation
@@ -43,7 +45,7 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ## Baseline Model
 
-![Baseline Model](reports\\figures\00-vanshing_grad.JPG)
+![Baseline Model](reports/figures/00-vanshing_grad.JPG)
 
 - As observed in the figure, the model failed to learn anything after 10 epochs, and this occurred due to the issue of vanishing gradients
 
