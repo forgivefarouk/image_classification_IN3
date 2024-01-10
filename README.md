@@ -13,7 +13,6 @@ Welcome to the Image Classification project utilizing Convolutional Neural Netwo
 - [Baseline Model + BatchNormalization](#baseline-model--batchnormalization)
 - [Baseline Model + BatchNormalization + Dropout](#baseline-model--batchnormalization--dropout)
 - [Baseline Model + BatchNormalization + Dropout + Data Augmentation](#baseline-model--batchnormalization--dropout--data-augmentation)
-- [Evaluation Metrics](#evaluation-metrics)
 
 ## Key Components
 
