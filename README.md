@@ -79,6 +79,8 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ### 5. model's performance
 
+- Note: All these results are based on GPU P100.
+
 ## Baseline Model + BatchNormalization
 - accuracy: 0.78 - precision: 0.79 - recall: 0.78 - F1_score: 0.78
 
