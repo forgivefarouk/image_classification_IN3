@@ -140,7 +140,4 @@ if __name__ == "__main__":
     train_generator,x_train,y_train, x_test, y_test = preprocess(batch_size)
     model = CNNModel()
     model.build_model()
-    plot_model(model.model, to_file='reports\\figures\model.png', show_shapes=True)
-    #model.fit_model(train_generator,x_train, x_test, y_test, epochs=1, batch_size=batch_size)
-    #model.visualize_accuracy_loss()
-    #model.model.save('models\\model2.h5')
+    model.fit_model(train_generator,x_train, x_test, y_test, epochs=1, batch_size=batch_size)
