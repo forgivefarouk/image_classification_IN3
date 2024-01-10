@@ -9,9 +9,6 @@ Welcome to the Image Classification project utilizing Convolutional Neural Netwo
 - [Overview](#overview)
 - [Key Components](#key-components)
 - [Getting Started](#getting-started)
-- [Dataset](#dataset)
-- [CNN Architecture](#cnn-architecture)
-- [Training and Validation](#training-and-validation)
 - [Baseline Model](#baseline-model)
 - [Baseline Model + BatchNormalization](#baseline-model--batchnormalization)
 - [Baseline Model + BatchNormalization + Dropout](#baseline-model--batchnormalization--dropout)
@@ -37,7 +34,7 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ### 2. CNN Architecture Design
 
-![CNN Architecture](reports\figures\model.png)
+![CNN Architecture]("reports\figures\model.png")
 
 ### 3. Training and Validation
 
@@ -46,7 +43,7 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ## Baseline Model
 
-![Baseline Model](reports\figures\00-vanshing_grad.JPG)
+![Baseline Model](reports\\figures\00-vanshing_grad.JPG)
 
 - As observed in the figure, the model failed to learn anything after 10 epochs, and this occurred due to the issue of vanishing gradients
 
