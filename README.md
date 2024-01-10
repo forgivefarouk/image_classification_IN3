@@ -34,9 +34,7 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ### 2. CNN Architecture Design
 
-<img src="reports\figures\model.png" alt="Alt text" title="Optional title">
-
-![CNN Architecture]("reports\figures\model.png")
+![CNN Architecture]("reports/figures/model.png")
 
 ### 3. Training and Validation
 
@@ -51,7 +49,7 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ## Baseline Model + BatchNormalization
 
-![Baseline Model + BatchNormalization](reports\figures\01-overfitting.JPG)
+![Baseline Model + BatchNormalization](reports/figures/01-overfitting.JPG)
 
 - Implementing normalization after the Conv2D layer to enhance the model's learning capacity
 - If you observe in the model training you can see that Validation loss is increasing a lot which means our model is overfitting.
@@ -59,11 +57,11 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 ## Baseline Model + BatchNormalization + Dropout
 
 - So let's regularize the model. In deep learning, dropout is a very good form of regularization.
-![Baseline Model + BatchNormalization + Dropout](reports\figures\03-schedule_dropout.JPG)
+![Baseline Model + BatchNormalization + Dropout](reports/figures/03-schedule_dropout.JPG)
 
 ## Baseline Model + BatchNormalization + Dropout + Data Augmentation
 
-![Data Augmentation](reports\figures\05-augmented_data_100epochs.JPG)
+![Data Augmentation](reports/figures/05-augmented_data_100epochs.JPG)
 
 - To reduce overfitting, we agreed that adding more data will reduce overfitting. Even when our model doesn't overfit, it's a very good idea to add more data if you can. But collecting data is tough, and also data preprocessing is not as fancy as it sounds. But what if we can generate data from our existing data? We already have 60K images, and we can generate lots and lots of images out of it.
 
