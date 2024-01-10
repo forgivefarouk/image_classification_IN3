@@ -9,11 +9,9 @@ Welcome to the Image Classification project utilizing Convolutional Neural Netwo
 - [Overview](#overview)
 - [Key Components](#key-components)
 - [Getting Started](#getting-started)
-- [Baseline Model](#baseline-model)
-- [Baseline Model + BatchNormalization](#baseline-model--batchnormalization)
-- [Baseline Model + BatchNormalization + Dropout](#baseline-model--batchnormalization--dropout)
-- [Baseline Model + BatchNormalization + Dropout + Data Augmentation](#baseline-model--batchnormalization--dropout--data-augmentation)
-
+- [CNN Architecture](#2-cnn-architecture-design)
+- [Challenges](#challenges)
+- [model's performance]()
 ## Key Components
 
 ### 1. Dataset Selection and Preprocessing
@@ -35,10 +33,16 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ![CNN Architecture](reports/figures/model.png)
 
+- Initially, a basic model was constructed with three Conv2D layers and one Dense layer. However, it was observed that the model was underfitting.
+- To address the underfitting issue, a more complex architecture was developed, consisting of three blocks. Each block comprises a sequence of Conv2D, Conv2D, and MaxPooling2D layers.
+
+
 ### 3. Training and Validation
 
 - Split the dataset into training and validation sets (train =5K , validation=1K)
 - Scale the input to range from 0 to 1
+
+## Challenges
 
 ## Baseline Model
 
@@ -66,10 +70,24 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 - To reduce overfitting, we agreed that adding more data will reduce overfitting. Even when our model doesn't overfit, it's a very good idea to add more data if you can. But collecting data is tough, and also data preprocessing is not as fancy as it sounds. But what if we can generate data from our existing data? We already have 60K images, and we can generate lots and lots of images out of it.
 
-### 5. Evaluation Metrics
+## Additional improvement through Transfer Learning
 
-## On Test Data
-- accuracy: 0.8626 - precision: 0.8919 - recall: 0.8438 - F1_score: 0.8684
+![Transfer Learning](reports/figures/06-transfer_learning.JPG)
+
+- I haven't integrated this into my code; it's attached as a separate notebook, providing additional insights for my task.
+- Employed a pretrained model, InceptionResNetV2, utilizing transfer learning to enhance accuracy by freezing all its layers.
+- Further improvement can be achieved by unfreezing specific layers."
+
+### 5. model's performance
+
+## Baseline Model + BatchNormalization
+- accuracy: 0.78 - precision: 0.79 - recall: 0.78 - F1_score: 0.78
+
+## Baseline Model + BatchNormalization + Dropout
+- accuracy: 0.80 - precision: 0.85 - recall: 0.76 - F1_score: 0.80
+
+## Baseline Model + BatchNormalization + Dropout + Data Augmentation
+- accuracy: 0.86 - precision: 0.89 - recall: 0.84 - F1_score: 0.86
 
 ## Getting Started
 
