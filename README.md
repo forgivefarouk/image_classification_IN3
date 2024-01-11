@@ -72,6 +72,12 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 
 ## Additional improvement through Transfer Learning
 
+- Since the training images are relatively small (32x32), and real-world photos are typically larger, there is a discrepancy in the data distribution between training and inference. To address this issue, two potential solutions can be considered:
+
+1- Re-train the Model: Acquire and use a new dataset that better represents the distribution of real-world images. Training the model on this new data can help align the model's understanding with the characteristics of larger photos.
+
+2- Transfer Learning: Leverage transfer learning by using a pre-trained model on a larger dataset and fine-tuning it on the smaller dataset. This approach allows the model to benefit from knowledge gained during training on extensive data while adapting to the specifics of the smaller dataset.
+
 ![Transfer Learning](reports/figures/06-transfer_learning.JPG)
 
 - I haven't integrated this into my code; it's attached as a separate notebook, providing additional insights for my task.
@@ -113,6 +119,12 @@ To get started with the project, follow these steps:
     python src\model_evaluation.py
     ```
 6. For prediction:
+    1. Streamlit
+    ```bash
+     streamlit run src\streamlit_app.py
+    ```
+    OR 
+    
     1. Assign the image you want to be classified to `img_path`.
     2. Run:
     ```bash

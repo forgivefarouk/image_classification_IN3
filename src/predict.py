@@ -10,7 +10,7 @@ labels = ['airplane', 'automobile', 'bird', 'cat', 'deer',
           'dog', 'frog', 'horse', 'ship', 'truck']
 
 
-def predict(model_path: str, img_path: str) -> str:
+def predict(model_path: str, img: str) -> str:
     """
     Predicts the label of the test image.
 
@@ -23,9 +23,6 @@ def predict(model_path: str, img_path: str) -> str:
     """
     # Load the model
     model = load_model(model_path)
-
-    # Read the test image
-    img = cv2.imread(img_path)
 
     # Check if the image is loaded successfully
     if img is not None:
@@ -46,6 +43,9 @@ def predict(model_path: str, img_path: str) -> str:
 
 if __name__ == "__main__":
     
-    img="bird.jpg"
+    img_path="bird.jpg"
+    # Read the test image
+    img = cv2.imread(img_path)
+
     predictions = predict(model_path, img)
     print(predictions)
