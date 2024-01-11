@@ -97,6 +97,11 @@ The CIFAR-10 dataset is available through the [CIFAR-10 website](https://www.cs.
 ## Baseline Model + BatchNormalization + Dropout + Data Augmentation
 - accuracy: 0.86 - precision: 0.89 - recall: 0.84 - F1_score: 0.86
 
+## Deployment & Access
+
+- This app is available for you to interact with on Streamlit.
+- Visit the app: Streamlit (https://in3img.streamlit.app/)
+
 ## Getting Started
 
 To get started with the project, follow these steps:
